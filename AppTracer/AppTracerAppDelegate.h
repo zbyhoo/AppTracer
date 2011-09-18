@@ -3,7 +3,7 @@
 //  AppTracer
 //
 //  Created by Zbigniew Kominek on 9/18/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 Zbigniew Kominek. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

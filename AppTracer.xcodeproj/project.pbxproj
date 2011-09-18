@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		263CD093142615A700485854 /* ATAppleSystemLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD08D142615A700485854 /* ATAppleSystemLogger.m */; };
+		263CD094142615A700485854 /* ATAppleSystemLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD08D142615A700485854 /* ATAppleSystemLogger.m */; };
+		263CD095142615A700485854 /* ATLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD08F142615A700485854 /* ATLogger.m */; };
+		263CD096142615A700485854 /* ATLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD08F142615A700485854 /* ATLogger.m */; };
+		263CD097142615A700485854 /* ATLoggerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD091142615A700485854 /* ATLoggerFactory.m */; };
+		263CD098142615A700485854 /* ATLoggerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD091142615A700485854 /* ATLoggerFactory.m */; };
+		263CD09C142616B300485854 /* ATLoggerMessangerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD09B142616B300485854 /* ATLoggerMessangerTest.m */; };
 		26F8639A142614CE001783CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F86399142614CE001783CC /* UIKit.framework */; };
 		26F8639C142614CE001783CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639B142614CE001783CC /* Foundation.framework */; };
 		26F8639E142614CE001783CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639D142614CE001783CC /* CoreGraphics.framework */; };
@@ -22,8 +29,6 @@
 		26F863C2142614CF001783CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639B142614CE001783CC /* Foundation.framework */; };
 		26F863C3142614CF001783CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639D142614CE001783CC /* CoreGraphics.framework */; };
 		26F863CB142614CF001783CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26F863C9142614CF001783CC /* InfoPlist.strings */; };
-		26F863CD142614CF001783CC /* AppTracerTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 26F863CC142614CF001783CC /* AppTracerTests.h */; };
-		26F863CF142614CF001783CC /* AppTracerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F863CE142614CF001783CC /* AppTracerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		263CD08C142615A700485854 /* ATAppleSystemLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATAppleSystemLogger.h; path = Logger/ATAppleSystemLogger.h; sourceTree = "<group>"; };
+		263CD08D142615A700485854 /* ATAppleSystemLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATAppleSystemLogger.m; path = Logger/ATAppleSystemLogger.m; sourceTree = "<group>"; };
+		263CD08E142615A700485854 /* ATLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATLogger.h; path = Logger/ATLogger.h; sourceTree = "<group>"; };
+		263CD08F142615A700485854 /* ATLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLogger.m; path = Logger/ATLogger.m; sourceTree = "<group>"; };
+		263CD090142615A700485854 /* ATLoggerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATLoggerFactory.h; path = Logger/ATLoggerFactory.h; sourceTree = "<group>"; };
+		263CD091142615A700485854 /* ATLoggerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerFactory.m; path = Logger/ATLoggerFactory.m; sourceTree = "<group>"; };
+		263CD092142615A700485854 /* ATLoggerMessanger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATLoggerMessanger.h; path = Logger/ATLoggerMessanger.h; sourceTree = "<group>"; };
+		263CD09B142616B300485854 /* ATLoggerMessangerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerMessangerTest.m; path = LoggerTests/ATLoggerMessangerTest.m; sourceTree = "<group>"; };
+		263CD09D142617F600485854 /* AppTracerTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppTracerTests-Prefix.pch"; sourceTree = "<group>"; };
 		26F86395142614CE001783CC /* AppTracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTracer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F86399142614CE001783CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26F8639B142614CE001783CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +71,6 @@
 		26F863BF142614CF001783CC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		26F863C8142614CF001783CC /* AppTracerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppTracerTests-Info.plist"; sourceTree = "<group>"; };
 		26F863CA142614CF001783CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		26F863CC142614CF001783CC /* AppTracerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppTracerTests.h; sourceTree = "<group>"; };
-		26F863CE142614CF001783CC /* AppTracerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTracerTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +98,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		263CD08A1426158C00485854 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				263CD0991426168600485854 /* Tests */,
+				263CD092142615A700485854 /* ATLoggerMessanger.h */,
+				263CD08C142615A700485854 /* ATAppleSystemLogger.h */,
+				263CD08D142615A700485854 /* ATAppleSystemLogger.m */,
+				263CD090142615A700485854 /* ATLoggerFactory.h */,
+				263CD091142615A700485854 /* ATLoggerFactory.m */,
+				263CD08E142615A700485854 /* ATLogger.h */,
+				263CD08F142615A700485854 /* ATLogger.m */,
+			);
+			name = Logger;
+			sourceTree = "<group>";
+		};
+		263CD0991426168600485854 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				263CD09B142616B300485854 /* ATLoggerMessangerTest.m */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		26F8638A142614CE001783CC = {
 			isa = PBXGroup;
 			children = (
+				263CD08A1426158C00485854 /* Logger */,
 				26F8639F142614CE001783CC /* AppTracer */,
 				26F863C6142614CF001783CC /* AppTracerTests */,
 				26F86398142614CE001783CC /* Frameworks */,
@@ -162,8 +198,6 @@
 		26F863C6142614CF001783CC /* AppTracerTests */ = {
 			isa = PBXGroup;
 			children = (
-				26F863CC142614CF001783CC /* AppTracerTests.h */,
-				26F863CE142614CF001783CC /* AppTracerTests.m */,
 				26F863C7142614CF001783CC /* Supporting Files */,
 			);
 			path = AppTracerTests;
@@ -172,6 +206,7 @@
 		26F863C7142614CF001783CC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				263CD09D142617F600485854 /* AppTracerTests-Prefix.pch */,
 				26F863C8142614CF001783CC /* AppTracerTests-Info.plist */,
 				26F863C9142614CF001783CC /* InfoPlist.strings */,
 			);
@@ -222,6 +257,9 @@
 /* Begin PBXProject section */
 		26F8638C142614CE001783CC /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Zbigniew Kominek";
+			};
 			buildConfigurationList = 26F8638F142614CE001783CC /* Build configuration list for PBXProject "AppTracer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -256,7 +294,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F863CB142614CF001783CC /* InfoPlist.strings in Resources */,
-				26F863CD142614CF001783CC /* AppTracerTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +324,9 @@
 				26F863AA142614CF001783CC /* AppTracerAppDelegate.m in Sources */,
 				26F863AE142614CF001783CC /* AppTracerAppDelegate_iPhone.m in Sources */,
 				26F863B5142614CF001783CC /* AppTracerAppDelegate_iPad.m in Sources */,
+				263CD093142615A700485854 /* ATAppleSystemLogger.m in Sources */,
+				263CD095142615A700485854 /* ATLogger.m in Sources */,
+				263CD097142615A700485854 /* ATLoggerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +334,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26F863CF142614CF001783CC /* AppTracerTests.m in Sources */,
+				263CD094142615A700485854 /* ATAppleSystemLogger.m in Sources */,
+				263CD096142615A700485854 /* ATLogger.m in Sources */,
+				263CD098142615A700485854 /* ATLoggerFactory.m in Sources */,
+				263CD09C142616B300485854 /* ATLoggerMessangerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,7 +463,7 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppTracer/AppTracer-Prefix.pch";
+				GCC_PREFIX_HEADER = "AppTracerTests/AppTracerTests-Prefix.pch";
 				INFOPLIST_FILE = "AppTracerTests/AppTracerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -437,7 +480,7 @@
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AppTracer/AppTracer-Prefix.pch";
+				GCC_PREFIX_HEADER = "AppTracerTests/AppTracerTests-Prefix.pch";
 				INFOPLIST_FILE = "AppTracerTests/AppTracerTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -464,6 +507,7 @@
 				26F863D4142614CF001783CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26F863D5142614CF001783CC /* Build configuration list for PBXNativeTarget "AppTracerTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +516,7 @@
 				26F863D7142614CF001783CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
