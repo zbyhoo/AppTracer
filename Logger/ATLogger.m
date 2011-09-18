@@ -11,31 +11,31 @@
 
 @implementation ATLogger
 
-static ATLogger* defaultLogger = nil;
+static ATLogger* sharedLogger = nil;
 
-+ (ATLogger*) defaultLogger
++ (ATLogger*) sharedLogger
 {
-    if (!defaultLogger)
+    if (!sharedLogger)
     {
         @synchronized(self)
         {
-            if (!defaultLogger)
-                defaultLogger = [[ATLogger alloc] init];
+            if (!sharedLogger)
+                sharedLogger = [[ATLogger alloc] init];
         }
     }
-    return defaultLogger;
+    return sharedLogger;
 }
 
-+ (void) deallocDefaultLogger
++ (void) deallocSharedLogger
 {
-    if (defaultLogger)
+    if (sharedLogger)
     {
         @synchronized(self)
         {
-            if (defaultLogger)
+            if (sharedLogger)
             {
-                [defaultLogger release];
-                defaultLogger = nil;
+                [sharedLogger release];
+                sharedLogger = nil;
             }
         }
     }

@@ -10,9 +10,6 @@
 #import "ATAppleSystemLogger.h"
 
 @interface ATLoggerMessangerTest : SenTestCase
-
-- (void)testAppDelegate;       // simple test on application
-
 @end
 
 @implementation ATLoggerMessangerTest
