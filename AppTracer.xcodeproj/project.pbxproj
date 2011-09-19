@@ -15,6 +15,9 @@
 		263CD098142615A700485854 /* ATLoggerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD091142615A700485854 /* ATLoggerFactory.m */; };
 		263CD09C142616B300485854 /* ATLoggerMessangerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 263CD09B142616B300485854 /* ATLoggerMessangerTest.m */; };
 		2666B3B71427D68F006888CB /* ATLoggerFactoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2666B3B61427D68F006888CB /* ATLoggerFactoryTest.m */; };
+		2666B3BB1427DB3C006888CB /* ATLoggerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2666B3BA1427DB3C006888CB /* ATLoggerTest.m */; };
+		2666B3BE1427DC36006888CB /* ATLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2666B3BD1427DC36006888CB /* ATLoggerConfiguration.m */; };
+		2666B3BF1427DC36006888CB /* ATLoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2666B3BD1427DC36006888CB /* ATLoggerConfiguration.m */; };
 		26F8639A142614CE001783CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F86399142614CE001783CC /* UIKit.framework */; };
 		26F8639C142614CE001783CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639B142614CE001783CC /* Foundation.framework */; };
 		26F8639E142614CE001783CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F8639D142614CE001783CC /* CoreGraphics.framework */; };
@@ -53,6 +56,9 @@
 		263CD09B142616B300485854 /* ATLoggerMessangerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerMessangerTest.m; path = LoggerTests/ATLoggerMessangerTest.m; sourceTree = "<group>"; };
 		263CD09D142617F600485854 /* AppTracerTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppTracerTests-Prefix.pch"; sourceTree = "<group>"; };
 		2666B3B61427D68F006888CB /* ATLoggerFactoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerFactoryTest.m; path = LoggerTests/ATLoggerFactoryTest.m; sourceTree = "<group>"; };
+		2666B3BA1427DB3C006888CB /* ATLoggerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerTest.m; path = LoggerTests/ATLoggerTest.m; sourceTree = "<group>"; };
+		2666B3BC1427DC36006888CB /* ATLoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATLoggerConfiguration.h; path = Logger/ATLoggerConfiguration.h; sourceTree = "<group>"; };
+		2666B3BD1427DC36006888CB /* ATLoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ATLoggerConfiguration.m; path = Logger/ATLoggerConfiguration.m; sourceTree = "<group>"; };
 		26F86395142614CE001783CC /* AppTracer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTracer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F86399142614CE001783CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		26F8639B142614CE001783CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,6 +117,8 @@
 				263CD091142615A700485854 /* ATLoggerFactory.m */,
 				263CD08E142615A700485854 /* ATLogger.h */,
 				263CD08F142615A700485854 /* ATLogger.m */,
+				2666B3BC1427DC36006888CB /* ATLoggerConfiguration.h */,
+				2666B3BD1427DC36006888CB /* ATLoggerConfiguration.m */,
 			);
 			name = Logger;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			children = (
 				263CD09B142616B300485854 /* ATLoggerMessangerTest.m */,
 				2666B3B61427D68F006888CB /* ATLoggerFactoryTest.m */,
+				2666B3BA1427DB3C006888CB /* ATLoggerTest.m */,
 			);
 			name = Tests;
 			sourceTree = "<group>";
@@ -330,6 +339,7 @@
 				263CD093142615A700485854 /* ATAppleSystemLogger.m in Sources */,
 				263CD095142615A700485854 /* ATLogger.m in Sources */,
 				263CD097142615A700485854 /* ATLoggerFactory.m in Sources */,
+				2666B3BE1427DC36006888CB /* ATLoggerConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +352,8 @@
 				263CD098142615A700485854 /* ATLoggerFactory.m in Sources */,
 				263CD09C142616B300485854 /* ATLoggerMessangerTest.m in Sources */,
 				2666B3B71427D68F006888CB /* ATLoggerFactoryTest.m in Sources */,
+				2666B3BB1427DB3C006888CB /* ATLoggerTest.m in Sources */,
+				2666B3BF1427DC36006888CB /* ATLoggerConfiguration.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

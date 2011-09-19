@@ -17,10 +17,10 @@
 {
     // given
     ATLoggerFactory* factory = [[ATLoggerFactory alloc] init];
-    NSInteger loggerType = AT_LOGGER_CONSOLE;
+    NSInteger loggerOutput = AT_LOGGER_CONSOLE;
     
     // when
-    id logger = [factory newLogger:loggerType];
+    id logger = [factory newLogger:loggerOutput];
     
     // then
     STAssertNotNil(logger, nil);
@@ -30,10 +30,10 @@
 {
     // given
     ATLoggerFactory* factory = [[ATLoggerFactory alloc] init];
-    NSInteger loggerType = AT_LOGGER_FILE;
+    NSInteger loggerOutput = AT_LOGGER_FILE;
     
     // when
-    id logger = [factory newLogger:loggerType];
+    id logger = [factory newLogger:loggerOutput];
     
     // then
     STAssertNotNil(logger, nil);
@@ -43,33 +43,33 @@
 {
     // given
     ATLoggerFactory* factory = [[ATLoggerFactory alloc] init];
-    NSInteger loggerType = AT_LOGGER_FILE | AT_LOGGER_CONSOLE;
+    NSInteger loggerOutput = AT_LOGGER_FILE | AT_LOGGER_CONSOLE;
     
     // when
-    id logger = [factory newLogger:loggerType];
+    id logger = [factory newLogger:loggerOutput];
     
     // then
     STAssertNotNil(logger, nil);
 }
 
-- (void) test_newLogger_noType
+- (void) test_newLogger_noOutputType
 {
     // given
     ATLoggerFactory* factory = [[ATLoggerFactory alloc] init];
-    NSInteger loggerType = 0;
+    NSInteger loggerOutput = 0;
     
     // when, then
-    STAssertThrows([factory newLogger:loggerType], nil);
+    STAssertThrows([factory newLogger:loggerOutput], nil);
 }
 
-- (void) test_newLogger_unknownType
+- (void) test_newLogger_unknownOutputType
 {
     // given
     ATLoggerFactory* factory = [[ATLoggerFactory alloc] init];
-    NSInteger loggerType = 8;
+    NSInteger loggerOutput = 8;
     
     // when, then
-    STAssertThrows([factory newLogger:loggerType], nil);
+    STAssertThrows([factory newLogger:loggerOutput], nil);
 }
 
 - (void) test_logFilePath

@@ -8,6 +8,7 @@
 
 #import "ATLogger.h"
 #import "ATLoggerFactory.h"
+#import "ATLoggerConfiguration.h"
 
 @implementation ATLogger
 
@@ -64,7 +65,9 @@ static ATLogger* sharedLogger = nil;
 
 - (void) createDefaultLogger
 {
-    [self createLoggerWithOutput:AT_LOGGER_CONSOLE mode:AT_MODE_ALL];
+    ATLoggerConfiguration* configuration = [[ATLoggerConfiguration alloc] init];
+    [self createLoggerWithOutput:configuration.loggerOutput mode:configuration.loggerMode];
+    [configuration release];
 }
 
 - (void) logMessageWithLevel:(AtLogLevel)level 
