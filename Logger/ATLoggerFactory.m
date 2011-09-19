@@ -24,8 +24,9 @@
     BOOL consoleOutput = type & AT_LOGGER_CONSOLE;
     BOOL fileOutput = type & AT_LOGGER_FILE;
     
-    NSString* fileOutputPath = fileOutput ? [self logFilePath] : nil;
+    NSAssert1(consoleOutput || fileOutput, @"unknown or not specified logger type: %d", type);
     
+    NSString* fileOutputPath = fileOutput ? [self logFilePath] : nil;
     return [[ATAppleSystemLogger alloc] initWithConsoleOutput:consoleOutput fileOutput:fileOutputPath];
 }
 
